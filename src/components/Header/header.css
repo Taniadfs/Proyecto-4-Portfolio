@@ -4,11 +4,16 @@
   align-items: center;
   padding: var(--medium-padding);
   gap: var(--medium-gap);
+  padding-inline: 2rem;
 }
+
 .header {
   background-color: var(--background-color);
   color: var(--text-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-info {
@@ -50,4 +55,15 @@ nav a:visited {
 }
 nav a:hover {
   color: var(--other-color-3);
+}
+
+@media (max-width: 900px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-info h1 p {
+    text-align: center;
+  }
 }
