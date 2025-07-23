@@ -39,7 +39,6 @@ export function inicarHeaderToggle() {
     )
   })
 
-  // Close the menu when clicking outside of it
   document.addEventListener('click', (event) => {
     if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
       navMenu.classList.remove('active')
