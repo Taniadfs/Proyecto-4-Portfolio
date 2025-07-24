@@ -6,35 +6,40 @@ export function experienceStudies() {
   sectionExperienceStudies.innerHTML = `
  
 <div class="experience-studies_container">
-  <h2 class="experience-studies_title">Experiencia y Estudios</h2>
+  <h2 class="experience-studies_title">Experience & Studies</h2>
 
-  <div class="botones-toggle">
-  <button id="btn-experience">Experiencia</button>  
-  <button id="btn-estudios">Estudios</button>
+  <div class="button-arrow">
+  <button id="toggle-panel">Studies</button>  
   </div>
   
-
-<div id="experience-panel" class="panel">
- </div>
-<div id="estudios-panel" class= "panel panel-hidden"> </div>
+<div id="experience-panel" class= "panel"> 
+<p>
+I'm currently focused on building my skills through hands-on projects and continuous learning.  
+While I don’t have professional experience yet, I’m actively developing real projects to strengthen my portfolio and gain confidence as a developer.
+</p>
+</div>
+  <div id="studies-panel" class="panel panel-hidden">
+    <p>
+      I have completed a Full Stack Web Development course at <a href="https://www.hackio.com/developer" target="_blank">Rock the code</a>, where I learned HTML, CSS, JavaScript, and React.
+      Additionally, I have taken courses on Git and GitHub to enhance my version control skills.
+    </p>
+  </div>
 </div>`
 
-  const btnExperience =
-    sectionExperienceStudies.querySelector('#btn-experience')
-  const btnEstudios = sectionExperienceStudies.querySelector('#btn-estudios')
+  const toggleButton = sectionExperienceStudies.querySelector('#toggle-panel')
   const experiencePanel =
     sectionExperienceStudies.querySelector('#experience-panel')
-  const estudiosPanel =
-    sectionExperienceStudies.querySelector('#estudios-panel')
+  const studiesPanel = sectionExperienceStudies.querySelector('#studies-panel')
+  toggleButton.addEventListener('click', () => {
+    experiencePanel.classList.toggle('panel-hidden')
+    studiesPanel.classList.toggle('panel-hidden')
 
-  btnExperience.addEventListener('click', () => {
-    experiencePanel.classList.remove('panel-hidden')
-    estudiosPanel.classList.add('panel-hidden')
+    if (experiencePanel.classList.contains('panel-hidden')) {
+      toggleButton.textContent = '← Experience'
+    } else {
+      toggleButton.textContent = 'Studies →'
+    }
   })
 
-  btnEstudios.addEventListener('click', () => {
-    estudiosPanel.classList.remove('panel-hidden')
-    experiencePanel.classList.add('panel-hidden')
-  })
   return sectionExperienceStudies
 }
