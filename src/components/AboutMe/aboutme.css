@@ -7,6 +7,8 @@
   gap: var(--medium-gap);
   background-color: var(--secondary-color);
   flex-wrap: wrap;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .about-me-info {

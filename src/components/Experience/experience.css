@@ -8,9 +8,19 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--medium-padding);
-  gap: var(--medium-gap);
   background-color: var(--tertiary-color);
   flex-wrap: wrap;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  gap: var(--medium-gap);
+}
+
+.experience-studies_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0;
 }
 
 .experience-studies_title {
@@ -18,7 +28,7 @@
   font-size: 3rem;
   color: var(--title-color);
   font-family: var(--font-family-terry);
-  margin-bottom: var(--medium-margin);
+
   font-weight: 300;
 }
 #toggle-panel {
@@ -42,17 +52,15 @@
 }
 
 .panel {
-  padding: var(--medium-padding);
-  background-color: #f7f7f7;
-  border-radius: 12px;
-  margin-top: 2rem;
-  max-width: 800px;
+  padding-left: 0;
+  padding-right: 0;
   width: 100%;
-
+  margin: 0;
+  background-color: transparent;
+  text-align: left;
   color: #333;
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  border: none;
+  max-width: 800px;
 }
 
 .panel a {
@@ -64,5 +72,8 @@
 }
 
 .panel p {
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-family: var(--font-family-secondary);
+  text-align: left;
 }

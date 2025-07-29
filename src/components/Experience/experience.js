@@ -6,10 +6,12 @@ export function experienceStudies() {
   sectionExperienceStudies.innerHTML = `
  
 <div class="experience-studies_container">
+<div class="experience-studies_header">
   <h2 class="experience-studies_title">Experience & Studies</h2>
 
   <div class="button-arrow">
   <button id="toggle-panel">Studies</button>  
+  </div>
   </div>
   
 <div id="experience-panel" class= "panel"> 
