@@ -1,3 +1,7 @@
+.about-me {
+  background-color: var(--background-color);
+}
+
 .about-me-container {
   display: flex;
   flex-direction: row;
@@ -5,7 +9,7 @@
   justify-content: space-between;
   padding: var(--medium-padding);
   gap: var(--medium-gap);
-  background-color: var(--secondary-color);
+  background-color: var(--background-color);
   flex-wrap: wrap;
   padding-left: 3rem;
   padding-right: 3rem;

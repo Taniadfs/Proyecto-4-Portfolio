@@ -3,6 +3,7 @@ import './header.css'
 export function header() {
   const header = document.createElement('header')
   header.classList.add('header')
+  header.id = 'home'
   header.innerHTML = `
   <div class="header-container">
   <div class="header-info">

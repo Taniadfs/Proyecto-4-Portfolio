@@ -3,6 +3,7 @@ import './aboutme.css'
 export function aboutMe() {
   const aboutMe = document.createElement('section')
   aboutMe.classList.add('about-me')
+  aboutMe.id = 'aboutme'
   aboutMe.innerHTML = `
   <div class="about-me-container">
   <div class="about-me-info">

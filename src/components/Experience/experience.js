@@ -3,6 +3,7 @@ import './experience.css'
 export function experienceStudies() {
   const sectionExperienceStudies = document.createElement('section')
   sectionExperienceStudies.classList.add('experience-studies')
+  sectionExperienceStudies.id = 'experience'
   sectionExperienceStudies.innerHTML = `
  
 <div class="experience-studies_container">
@@ -22,7 +23,7 @@ While I don’t have professional experience yet, I’m actively developing real
 </div>
   <div id="studies-panel" class="panel panel-hidden">
     <p>
-      I have completed a Full Stack Web Development course at <a href="https://www.hackio.com/developer" target="_blank">Rock the code</a>, where I learned HTML, CSS, JavaScript, and React.
+      I'm currently studying a Full Stack Web Development course at <a href="https://www.hackio.com/developer" target="_blank">Rock the code</a>, where I learned HTML, CSS, JavaScript, React and.
       Additionally, I have taken courses on Git and GitHub to enhance my version control skills.
     </p>
   </div>

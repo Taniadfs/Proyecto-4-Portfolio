@@ -77,3 +77,10 @@
   font-family: var(--font-family-secondary);
   text-align: left;
 }
+#studies-panel a {
+  font-size: 1.2rem;
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}

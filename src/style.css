@@ -47,3 +47,16 @@ html,
 body {
   overflow-x: hidden;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+.about-me,
+.experience-studies,
+.skills,
+.projects,
+.contact {
+  padding-block: 6rem;
+}
