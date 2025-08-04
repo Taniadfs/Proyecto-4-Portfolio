@@ -23,7 +23,7 @@ While I don’t have professional experience yet, I’m actively developing real
 </div>
   <div id="studies-panel" class="panel panel-hidden">
     <p>
-      I'm currently studying a Full Stack Web Development course at <a href="https://www.hackio.com/developer" target="_blank">Rock the code</a>, where I learned HTML, CSS, JavaScript, React and.
+      I'm currently studying a Full Stack Web Development course at <a href="https://www.hackio.com/developer" target="_blank">Rock the code</a>, where I learned HTML, CSS, JavaScript, Github, React and Python.
       Additionally, I have taken courses on Git and GitHub to enhance my version control skills.
     </p>
   </div>

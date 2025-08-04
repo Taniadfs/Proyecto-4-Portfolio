@@ -35,17 +35,18 @@
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  margin-bottom: var(--medium-margin);
+  margin-top: var(--large-margin);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-@media (max-width: 675px) {
+@media (max-width: 771px) {
   .about-me-container {
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 
   .about-me-info p {
