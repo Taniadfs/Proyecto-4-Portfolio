@@ -27,6 +27,11 @@ While I don’t have professional experience yet, I’m actively developing real
       Additionally, I have taken courses on Git and GitHub to enhance my version control skills.
     </p>
   </div>
+</div>
+
+
+<div id="skills-container" class="skills">
+<h3 class="skills-title">My Skills</h3>
 </div>`
 
   const toggleButton = sectionExperienceStudies.querySelector('#toggle-panel')
@@ -42,6 +47,27 @@ While I don’t have professional experience yet, I’m actively developing real
     } else {
       toggleButton.textContent = 'Studies →'
     }
+  })
+
+  const skills = [
+    { name: 'HTML', src: './assets/iconos-skills/html-5.png' },
+    { name: 'CSS', src: './assets/iconos-skills/css-3.png' },
+    {
+      name: 'JavaScript',
+      src: './assets/iconos-skills/secuencia-de-comandos-de-java.png'
+    },
+    { name: 'React', src: './assets/iconos-skills/react-2.svg' },
+    { name: 'Python', src: './assets/iconos-skills/piton.png' },
+    { name: 'GitHub', src: './assets/iconos-skills/signo-de-github.png' }
+  ]
+
+  const skillsContainer =
+    sectionExperienceStudies.querySelector('#skills-container')
+  skills.forEach((skill) => {
+    const skillElement = document.createElement('div')
+    skillElement.classList.add('skill')
+    skillElement.innerHTML = `<img src="${skill.src}" alt="${skill.name}" class="skill-card">`
+    skillsContainer.appendChild(skillElement)
   })
 
   return sectionExperienceStudies
