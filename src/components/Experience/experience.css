@@ -85,6 +85,31 @@
   cursor: pointer;
 }
 
+#skills-container {
+  display: flex;
+  gap: var(--medium-gap);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+h3.skills-title {
+  font-size: 2rem;
+  color: var(--title-color);
+  font-family: var(--font-family-terry);
+  margin-bottom: var(--medium-margin);
+  font-weight: 300;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.skill-card {
+  height: 128;
+  width: 128px;
+  align-items: flex-start;
+}
 @media (max-width: 771px) {
   .experience-studies_container {
     flex-direction: column;

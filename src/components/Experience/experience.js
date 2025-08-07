@@ -31,7 +31,7 @@ While I don’t have professional experience yet, I’m actively developing real
 
 
 <div id="skills-container" class="skills">
-<h3 class="skills-title">My Skills</h3>
+<h3 class="skills-title">- My Skills -</h3>
 </div>`
 
   const toggleButton = sectionExperienceStudies.querySelector('#toggle-panel')
