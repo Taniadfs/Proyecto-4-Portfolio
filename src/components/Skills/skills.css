@@ -16,12 +16,11 @@ h3.skills-title {
 .skills-card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--medium-gap);
   justify-content: center;
 }
 
 .skill-card {
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   height: 100;
   width: 100px;
   align-items: flex-start;
@@ -33,35 +32,6 @@ h3.skills-title {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 150px;
   width: 170px;
-}
-
-.level-bar {
-  width: 100px;
-  height: 8px;
-  background-color: #e0e0e0;
-  border-radius: 4px;
-  overflow: hidden;
-  margin-top: 0.5rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.level-bar-fill {
-  width: 0;
-  height: 100%;
-  background-color: #00b894;
-  transition: width 0.5s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.level-text {
-  color: white;
-  font-size: 0.7rem;
-  font-family: var(--font-family-secondary);
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }

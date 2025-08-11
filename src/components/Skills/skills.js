@@ -20,6 +20,7 @@ export function renderSkills() {
 
   const sectionSkills = document.createElement('section')
   sectionSkills.classList.add('skills-section')
+  sectionSkills.id = 'skills'
 
   sectionSkills.innerHTML = `
   <div id="skills-container" class="skills">
@@ -35,14 +36,10 @@ export function renderSkills() {
     skillElement.innerHTML = `
     <div class="skill-content">
     <img src="${skill.src}" alt="${skill.name}" class="skill-card">
-    <div class="level-bar">
-    <div class="level-bar-fill" data-level=" ${skill.level}">
-    <span class="level-text">${skill.level}</span>
-    </div>
+    
     </div>
     </div>`
     skillsContainer.appendChild(skillElement)
   })
-
   return sectionSkills
 }
