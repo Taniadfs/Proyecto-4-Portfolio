@@ -4,6 +4,7 @@ import { inicarHeaderToggle } from './components/Header/header.js'
 import { aboutMe } from './components/AboutMe/abouteme.js'
 import { experienceStudies } from './components/Experience/experience.js'
 import { renderSkills } from './components/Skills/skills.js'
+import { renderProjects } from './Projects/projects.js'
 
 import './style.css'
 
@@ -20,3 +21,6 @@ document.body.appendChild(experienceSection)
 
 const skillsSection = renderSkills()
 document.body.appendChild(skillsSection)
+
+const projectsSection = renderProjects()
+document.body.appendChild(projectsSection)

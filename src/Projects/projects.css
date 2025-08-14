@@ -1,0 +1,76 @@
+.projects-section {
+  padding: var(--medium-padding) 3rem;
+
+  margin: 0 auto;
+}
+
+h2.project-title {
+  font-size: 3rem;
+  color: var(--title-color);
+  font-family: var(--font-family-terry);
+  font-weight: 300;
+}
+
+.projects-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted, #666);
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.projects-container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  background-color: var(--background-color, #f9f4ef);
+}
+
+.project-item {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.project-name {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+  color: var(--title-color);
+}
+
+.project-description {
+  font-size: 1rem;
+  color: var(--text-color, #555);
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-button {
+  background-color: var(--primary-color, #c8c5ca);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.project-button:hover {
+  background-color: var(--secondary-color);
+}
