@@ -5,6 +5,7 @@ import { aboutMe } from './components/AboutMe/abouteme.js'
 import { experienceStudies } from './components/Experience/experience.js'
 import { renderSkills } from './components/Skills/skills.js'
 import { renderProjects } from './Projects/projects.js'
+import { renderFooter } from './components/Footer/footer.js'
 
 import './style.css'
 
@@ -24,3 +25,6 @@ document.body.appendChild(skillsSection)
 
 const projectsSection = renderProjects()
 document.body.appendChild(projectsSection)
+
+const footerElement = renderFooter()
+document.body.appendChild(footerElement)

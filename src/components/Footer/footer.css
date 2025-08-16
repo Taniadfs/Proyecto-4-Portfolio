@@ -1,0 +1,34 @@
+.site-footer {
+  background: var(--background-color, #f9f4ef);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 3rem;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  text-align: center;
+}
+
+#contact .contact-cta,
+#contact .contact-cta:link,
+#contact .contact-cta:visited {
+  color: var(--title-color, #222);
+  text-decoration: none;
+  cursor: pointer;
+  font-family: var(--font-family-secondary);
+}
+
+#contact .contact-cta:hover,
+#contact .contact-cta:focus-visible {
+  opacity: 0.85;
+  outline: none;
+}
+
+.footer-credit {
+  color: var(--text-muted, #666);
+  font-size: 0.95rem;
+}
