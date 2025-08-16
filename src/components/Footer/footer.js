@@ -13,7 +13,7 @@ export function renderFooter() {
   title.textContent = 'Contact me'
 
   const btn = document.createElement('a')
-  btn.className = 'contact-cta' // <-- coincide con tu CSS
+  btn.className = 'contact-cta'
   btn.setAttribute('aria-label', 'Send email to Tania D’Angelo')
 
   const TO = 't.dangelofonfria@gmail.com'
