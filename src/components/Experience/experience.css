@@ -67,6 +67,7 @@
 .button-arrow {
   cursor: pointer;
 }
+
 @media (max-width: 771px) {
   .experience-studies_container {
     flex-direction: column;

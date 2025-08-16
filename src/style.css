@@ -56,8 +56,8 @@ html {
 
 .about-me,
 .experience-studies,
-.skills,
-.projects,
+.skills-section,      /* coincide con tu HTML real */
+.projects-section,    /* coincide con tu HTML real */
 .contact {
-  padding-block: 6rem;
+  padding-block: clamp(3rem, 6vw, 6rem);
 }

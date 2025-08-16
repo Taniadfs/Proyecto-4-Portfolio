@@ -38,7 +38,7 @@ While I don’t have professional experience yet, I’m actively developing real
     studiesPanel.classList.toggle('panel-hidden')
 
     if (experiencePanel.classList.contains('panel-hidden')) {
-      toggleButton.textContent = '← Experience'
+      toggleButton.textContent = 'Experience'
     } else {
       toggleButton.textContent = 'Studies →'
     }
